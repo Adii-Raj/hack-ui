@@ -1,10 +1,10 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const NOMIC_KEY = Deno.env.get("nk-WxfG__uHMzLPTBbWtqHeVPkn5oF4yB6A7eaiL646BjQ")!;
-const GROQ_KEY  = Deno.env.get("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")!;
-const SUPA_URL  = Deno.env.get("https://nveutizgphdjmixdsbhg.supabase.co/")!;
-const SUPA_ANON = Deno.env.get("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im52ZXV0aXpncGhkam1peGRzYmhnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMyOTExMzQsImV4cCI6MjA2ODg2NzEzNH0.MyabE0tU-01389MCrOTw-f1mDIpwNccBUGC1BIWx_5c")!;
+const NOMIC_KEY = Deno.env.get("NOMIC_API_KEY")!;
+const GROQ_KEY  = Deno.env.get("GROQ_API_KEY")!;
+const SUPA_URL  = Deno.env.get("SUPABASE_URL")!;
+const SUPA_ANON = Deno.env.get("SUPABASE_ANON_KEY")!;
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
